@@ -1,0 +1,9 @@
+<%- include('includes/topHtml') %>
+  <div class="container">
+    <form action="/users" method="POST">
+      <input required type="text" name="name" />
+      <button type="submit">Send a Name</button>
+    </form>
+    <button><a href="/users">View Users</a></button>
+  </div>
+<%- include('includes/bottomHtml') %>

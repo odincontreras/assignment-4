@@ -1,0 +1,13 @@
+<%- include('includes/topHtml') %>
+  
+    <% if(users.length === 0) { %>
+      <h1>Not Users Yet</h1>
+    <% } else { users.map(user => { %>  
+    <ul>
+      <li> <%= user %>   </li>
+    </ul>
+    <% })} %> 
+    <div class="container-button">
+      <button class="getback-button"><a href="/">Get Back</a></button>
+    </div>
+<%- include('includes/bottomHtml') %>
